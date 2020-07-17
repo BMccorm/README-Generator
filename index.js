@@ -32,23 +32,20 @@ let markdown = {
   username: "",
   userEmail: "",
   repoName: "",
-  projectDescr: "",
-  projectInsta: "",
-  projectUsage: "",
-  projectLicense: "",
-  projectContrib: "",
-  projectTest: "",
+  description: "",
+  installation: "",
+  usage: "",
+  license: "",
+  contributing: "",
+  tests: "",
   icon: "",
 };
 
 function init() {
   // add some error handling for when someone inputs nothing into fields
   inquirer.prompt(questions).then(function ({ username, userEmail }) {
-    userObj = {
-      username: username,
-      userEmail: userEmail,
-    };
-
+    markdown.username = username;
+    markdown.userEmail = userEmail;
     const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
 
     axios.get(queryUrl).then(({ data }) => {
@@ -63,52 +60,35 @@ function init() {
         })
 
         .then(function ({ repoName }) {
-          const repoObj = data.filter(
+          markdown.repoName = repoName;
+          const repoArr = data.filter(
             (data) => data.name.toLowerCase() == repoName.toLowerCase()
           );
-          console.log(repoObj);
-          console.log(repoObj.full_name);
+
+          if (repoArr[0].description !== null) {
+            markdown.description = repoArr[0].description;
+          } else if (
+            inquirer
+              .prompt({
+                message: "Enter a project description:",
+                name: "projectDesc",
+              })
+              .then(function (projectDesc) {
+                markdown.description = projectDesc;
+              })
+          );
+          console.log(markdown);
+
+          // markdown.license = repoArr[0].license;
+          // markdown.contributing = repoArr[0].contributors_url;
         });
     });
   });
 }
-// projectDescr: "",
-//   projectInsta: "",
-//   projectUsage: "",
-//   projectLicense: "",
-//   projectContrib: "",
-//   projectTest: "",
 init();
 
-// 1. get credentials
-// 2.    axios.get(queryUrl).then(({ data }) => {
-//       const reposArr = data.map((obj) => obj.name);
-//       const repoStr = reposArr.join("\n");
-//       console.log("Repositories found:" + "\n" + repoStr);
-//       return repoStr;
-//     });
-
-// 3. prompt user for repo name using axios call
-// repoName = data.name
-// contributors = repoName.contributors_url;
-// license = repoName.license;
-
-// 4. user input on which repo they want to generate a readme for and assign to a variable
-
-// 5. once repo is determined
-// repoName = data.name
-// contributors = repoName.contributors_url;
-// license = repoName.license;
-
-// repoName = data.name
-// contributors = repoName.contributors_url;
-// license = repoName.license;
-
 //     // writeToFile();
-//   });
-// }
 
-//  use a new promise to link them
 // search for badges and they give you syn.
 
 // function writeToFile(fileName, data) {
@@ -117,7 +97,7 @@ init();
 //     .then(({ data }) => {
 //       console.log(data[0].name);
 //       let icon = data[0].owner.avatar_url;
-//       userObj.icon = icon;
+// markdown.icon = icon;
 //       console.log("user object", userObj);
 //       return userObj;
 //     })
