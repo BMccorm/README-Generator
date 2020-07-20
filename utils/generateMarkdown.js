@@ -1,7 +1,12 @@
 function generateMarkdown(markdown) {
   return `
-# ${markdown.username}
+# ${markdown.repoName}
 
+https://img.shields.io/badge/<RepoSize>-<MESSAGE>-<yellow>
+
+Created by ${markdown.username}
+
+![Github icon image]
 ${markdown.icon}
 
 # CONTACT
@@ -10,16 +15,16 @@ ${markdown.userEmail}
 # DESCRIPTION
 ${markdown.description}
 
-# INSTALLATION 
-${markdown.installation}
-
 # USAGE
 ${markdown.usage}
+
+# INSTALLATION 
+${markdown.installation}
 
 # LICENSE
 ${markdown.license}
 
-# CONTRIBUTING
+# Interested in contributing? Here's how:
 ${markdown.contributing}
 
 # TESTING

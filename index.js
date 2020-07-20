@@ -127,7 +127,7 @@ async function init() {
 
 function writeToFile(markdown) {
   let readmeTemplate = generateMarkdown(markdown);
-  fs.writeFile("GeneratedREADME.md", readmeTemplate, function (err) {
+  fs.writeFile("README.md", readmeTemplate, function (err) {
     if (err) {
       throw err;
     }
