@@ -1,13 +1,30 @@
 function generateMarkdown(markdown) {
   return `
 # ${markdown.username}
+
 ${markdown.icon}
-CONTACT
+
+# CONTACT
 ${markdown.userEmail}
-DESCRIPTION
+
+# DESCRIPTION
 ${markdown.description}
-INSTALLATION 
+
+# INSTALLATION 
 ${markdown.installation}
+
+# USAGE
+${markdown.usage}
+
+# LICENSE
+${markdown.license}
+
+# CONTRIBUTING
+${markdown.contributing}
+
+# TESTING
+${markdown.tests}
+
 `;
 }
 

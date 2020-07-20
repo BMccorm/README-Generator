@@ -26,19 +26,21 @@ async function init() {
     tests: "",
     icon: "",
   };
+
   let { username } = await inquirer.prompt(nameQuestion);
-  if (username == "") {
-    console.log("No username found. Please try again");
-    const { username } = await inquirer.prompt(nameQuestion);
-    // console.log(username);
+  if (username === "") {
+    console.log("Username not found. Please try again");
+    let answer = await inquirer.prompt(nameQuestion);
+    username = answer.username;
   }
 
   markdown.username = username;
 
   let { userEmail } = await inquirer.prompt(emailQuestion);
   if (userEmail == "") {
-    console.log("No email found. Please try again");
-    const { userEmail } = await inquirer.prompt(emailQuestion);
+    console.log("Email not found. Please try again");
+    let emailAnswer = await inquirer.prompt(emailQuestion);
+    userEmail = emailAnswer.userEmail;
   }
   markdown.userEmail = userEmail;
 
@@ -125,7 +127,7 @@ async function init() {
 
 function writeToFile(markdown) {
   let readmeTemplate = generateMarkdown(markdown);
-  fs.writeFile("README.md", readmeTemplate, function (err) {
+  fs.writeFile("GeneratedREADME.md", readmeTemplate, function (err) {
     if (err) {
       throw err;
     }
