@@ -1,31 +1,17 @@
-// * At least one badge -> is a badge just an icon/graphic?
-//     * Project title
-//         * Description -> should this be pulled from repo or entered by user?
-//         * Table of Contents
-//             * Installation -> written by user?
-//             * Usage -> written by user?
-//             * License
-//             * Contributing -> is this "contributions" pulled from url?
-//             * Tests -> written by user?
-//             * Questions -> just question prompt below?
-//             * User GitHub profile picture
-//                 * User GitHub email
-
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-const questions = [
-  {
-    message: "Enter your GitHub username:",
-    name: "username",
-  },
-  {
-    message: "What is your GitHub email?",
-    name: "userEmail",
-  },
-];
+const nameQuestion = {
+  message: "Enter your GitHub username:",
+  name: "username",
+};
+
+const emailQuestion = {
+  message: "What is your GitHub email?",
+  name: "userEmail",
+};
 
 async function init() {
   let markdown = {
@@ -40,14 +26,20 @@ async function init() {
     tests: "",
     icon: "",
   };
-
-  // add some error handling for when someone inputs nothing into fields
-  const answers = await inquirer.prompt(questions);
-  console.log(answers);
-  const username = answers.username;
-  const userEmail = answers.userEmail;
+  let { username } = await inquirer.prompt(nameQuestion);
+  if (username == "") {
+    console.log("No username found. Please try again");
+    const { username } = await inquirer.prompt(nameQuestion);
+    // console.log(username);
+  }
 
   markdown.username = username;
+
+  let { userEmail } = await inquirer.prompt(emailQuestion);
+  if (userEmail == "") {
+    console.log("No email found. Please try again");
+    const { userEmail } = await inquirer.prompt(emailQuestion);
+  }
   markdown.userEmail = userEmail;
 
   const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
@@ -69,7 +61,6 @@ async function init() {
 
   if ((await repoArr[0].description) !== null) {
     markdown.description = repoArr[0].description;
-    // console.log(markdown);
   } else {
     await inquirer
       .prompt({
@@ -78,7 +69,6 @@ async function init() {
       })
       .then(function ({ projectDesc }) {
         markdown.description = projectDesc;
-        // console.log(markdown);
       });
   }
 
@@ -130,39 +120,17 @@ async function init() {
 
   console.log(markdown);
 
-  // const README= function writeToFile(fileName, data) {
-  function writeToFile(fileName, markdown) {
-    let readmeTemplate = generateMarkdown(markdown);
-    fs.writeFile("README.md", readmeTemplate, function (err) {
-      if (err) {
-        throw err;
-      }
-      console.log("good!");
-    });
-  }
-  error;
-  console.log(error);
+  writeToFile(markdown);
+}
+
+function writeToFile(markdown) {
+  let readmeTemplate = generateMarkdown(markdown);
+  fs.writeFile("README.md", readmeTemplate, function (err) {
+    if (err) {
+      throw err;
+    }
+    console.log("good!");
+  });
 }
 
 init();
-
-// .then(function (userObj) {
-//   let readmeTemplate = generateMarkdown(userObj);
-//   fs.writeFile("README.md", readmeTemplate, function (err) {
-//     if (err) {
-//       throw err;
-//     }
-//     console.log("good!");
-//   });
-// })
-// .catch((error) => console.log(error));
-
-// function writeToFile(fileName, data) {
-//   const readmeTemplate = generateMarkdown(markdown);
-//   fs.writeFile("README.md", readmeTemplate, function (err) {
-//     if (err) {
-//       throw err;
-//     }
-//     console.log("good!");
-//   });
-// }
