@@ -1,8 +1,11 @@
 function generateMarkdown(markdown) {
   return `
+
+![GitHub repo size](https://img.shields.io/github/repo-size/${markdown.username}/${markdown.repoName})
+
 # ${markdown.repoName}
 
-https://img.shields.io/badge/<RepoSize>-<MESSAGE>-<yellow>
+![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
 Created by ${markdown.username}
 
@@ -29,6 +32,7 @@ ${markdown.contributing}
 
 # TESTING
 ${markdown.tests}
+
 
 `;
 }

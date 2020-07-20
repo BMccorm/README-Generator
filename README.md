@@ -1,7 +1,8 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/bmccorm/README-Generator)
 
-# bio
+# README-Generator
 
-https://img.shields.io/badge/<RepoSize>-<MESSAGE>-<yellow>
+![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
 Created by bmccorm
 
@@ -9,23 +10,29 @@ Created by bmccorm
 https://avatars1.githubusercontent.com/u/64443618?v=4
 
 # CONTACT
-briellemccormick@gmail.com
+
+BrielleMcCormick@gmail.com
 
 # DESCRIPTION
-test
+
+This is a dynamically created ReadMe file.
 
 # USAGE
-test
 
-# INSTALLATION 
-test
+once the project is downloaded and running, follow the prompts for each question. The information will be formatted and saved ina readme file when completed
+
+# INSTALLATION
+
+fork this repo and run npm i
 
 # LICENSE
-test
+
+no license at this time
 
 # Interested in contributing? Here's how:
-test
+
+reach out to expand on this project
 
 # TESTING
-test
 
+no testing at the moment
