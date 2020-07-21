@@ -31,7 +31,7 @@ To install this project, fork the repo and download all node module packages, in
 
 ## Usage
 
-Once the project is running in terminal, follow the prompts for each question. The information will be automatically formatted and saved in a README file when completed. <br>
+Once the project is running in terminal, follow the prompts for each question. The information will be automatically formatted and saved in a README file when completed. <br><br>
 ![CLI README App Demo](utils/app_demo.gif)
 
 ## Commonly Asked Questions
