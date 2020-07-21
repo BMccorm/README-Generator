@@ -34,15 +34,15 @@ Once the project is running in terminal, follow the prompts for each question. T
 
 no license at this time
 
-## Interested in contributing? Here's how:
-
-reach out to expand on this project
-
 ## Testing
 
 no testing at the moment
 
 ## Questions
+
+## Interested in contributing? Here's how:
+
+Reach out to expand on this project
 
 ## Contact
 

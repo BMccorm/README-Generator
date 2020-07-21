@@ -25,13 +25,13 @@ ${markdown.usage}
 ## License
 ${markdown.license}
 
-## Interested in contributing? Here's how:
-${markdown.contributing}
-
 ## Testing
 ${markdown.tests}
 
 ## Questions 
+
+## Interested in contributing? Here's how:
+${markdown.contributing}
 
 ## Contact
 For more information, please email me at ${markdown.userEmail}
