@@ -1,30 +1,22 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/BMcCorm/README-Generator)
-![GitHub stars](https://img.shields.io/github/stars/BMcCorm/README-Generator?style=social)
-![GitHub forks](https://img.shields.io/github/forks/BMcCorm/README-Generator?style=social)
+->![GitHub repo size](https://img.shields.io/github/repo-size/BMcCorm/README-Generator)<-
+->![GitHub stars](https://img.shields.io/github/stars/BMcCorm/README-Generator?style=social)<-
+->![GitHub forks](https://img.shields.io/github/forks/BMcCorm/README-Generator?style=social)<-
 
 # README-Generator
 
-Created by BMcCorm
+-> Created by BMcCorm <-
 
-![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
+->Add link to project<-
 
-Table of Contents
-
-Installation
-Usage
-License
-Contributors
-Tests
-Questions
-Installation
+->![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)<-
 
 ## Description
 
-This command-line application dynamically creates ReadMe files based off of user's input. It was created using Node.js and Javascript.
+This command-line application dynamically creates ReadMe files based off the user's input. It was created using Node.js and Javascript.
 
 ## Installation
 
-To install this project, fork this repo and download all mode module packages, including Inquirer. Open the folder in terminal and enter "node index.js".
+To install this project, fork this repo and download all node module packages, including Inquirer. Open the folder in terminal and enter "node index.js".
 
 ## Usage
 

@@ -1,17 +1,17 @@
 function generateMarkdown(markdown) {
   return `
-<p align="center" text-align="center">
-![GitHub repo size](https://img.shields.io/github/repo-size/${markdown.username}/${markdown.repoName})
-![GitHub stars](https://img.shields.io/github/stars/${markdown.username}/${markdown.repoName}?style=social)
-![GitHub forks](https://img.shields.io/github/forks/${markdown.username}/${markdown.repoName}?style=social)
+
+->![GitHub repo size](https://img.shields.io/github/repo-size/${markdown.username}/${markdown.repoName})<-
+->![GitHub stars](https://img.shields.io/github/stars/${markdown.username}/${markdown.repoName}?style=social)<-
+->![GitHub forks](https://img.shields.io/github/forks/${markdown.username}/${markdown.repoName}?style=social)<-
 
 # ${markdown.repoName}
-Created by ${markdown.username}
+-> Created by ${markdown.username} <-
 
-__Add link to project
+->Add link to project<-
 
-![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
-</p>
+->![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)<-
+
 
 ## Description
 ${markdown.description}
