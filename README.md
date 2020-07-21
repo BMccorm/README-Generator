@@ -8,17 +8,27 @@ Created by BMcCorm
 
 ![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
+Table of Contents
+
+Installation
+Usage
+License
+Contributors
+Tests
+Questions
+Installation
+
 ## Description
 
-This is a dynamically created ReadMe file.
-
-## Usage
-
-once the project is downloaded and running, follow the prompts for each question. The information will be formatted and saved ina readme file when completed
+This command-line application dynamically creates ReadMe files based off of user's input. It was created using Node.js and Javascript.
 
 ## Installation
 
-fork this repo and run npm i
+To install this project, fork this repo and download all mode module packages, including Inquirer. Open the folder in terminal and enter "node index.js".
+
+## Usage
+
+Once the project is running in terminal, follow the prompts for each question. The information will be automatically formatted and saved in a readme file when completed.
 
 ## License
 
