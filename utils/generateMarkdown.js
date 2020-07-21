@@ -1,11 +1,9 @@
 function generateMarkdown(markdown) {
   return `
 
-<div align="center">
 ![GitHub repo size](https://img.shields.io/github/repo-size/${markdown.username}/${markdown.repoName})
 ![GitHub stars](https://img.shields.io/github/stars/${markdown.username}/${markdown.repoName}?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/${markdown.username}/${markdown.repoName}?style=social)
-</div>
 
 # ${markdown.repoName}
  Created by ${markdown.username} 
