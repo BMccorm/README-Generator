@@ -7,9 +7,9 @@
 # README-Generator
 Created by [BMcCorm](https://github.com/BMcCorm) 
 
-https://BMcCorm.github.io/README-Generator/
+Project [Link](https://BMcCorm.github.io/README-Generator/)
 
-Project Link: ![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
+![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
 ## Table of Contents
 - [Description](#Description)
