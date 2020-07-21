@@ -6,7 +6,7 @@ function generateMarkdown(markdown) {
 ![GitHub forks](https://img.shields.io/github/forks/${markdown.username}/${markdown.repoName}?style=social)
 
 # ${markdown.repoName}
- Created by ${markdown.username} 
+Created by [${markdown.username}](https://github.com/${markdown.username}) 
 
 https://${markdown.username}.github.io/${markdown.repoName}/
 
@@ -37,9 +37,9 @@ ${markdown.questions}
 ## Interested in contributing? Here's how:
 
 1. Fork this repository
-2. Create a branch: git checkout -b "Create_A_Branch_Name"
+2. Create a branch: git checkout -b "create_a_branch_name"
 3. Make and commit your changes: git commit -m "add your message here"
-4. Push to the master branch: git push origin "Branch_Name"
+4. Push to the master branch: git push origin "branch_name"
 5. Create the pull request
 
 Additional information on creating a pull request can be found [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request). 
