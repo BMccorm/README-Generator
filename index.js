@@ -105,7 +105,7 @@ async function init() {
 
   const { contributing } = await inquirer.prompt({
     message:
-      "Contributing: enter the usernames of anyone who has contributed on this project.",
+      "Contributing: enter the usernames of anyone who has contributed to this project.",
     name: "contributing",
   });
 

@@ -1,11 +1,11 @@
 function generateMarkdown(markdown) {
   return `
 
-<p align="center">
+<div align="center">
 ![GitHub repo size](https://img.shields.io/github/repo-size/${markdown.username}/${markdown.repoName})
 ![GitHub stars](https://img.shields.io/github/stars/${markdown.username}/${markdown.repoName}?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/${markdown.username}/${markdown.repoName}?style=social)
-</p>
+</div>
 
 # ${markdown.repoName}
  Created by ${markdown.username} 
@@ -18,9 +18,10 @@ https://${markdown.username}.github.io/${markdown.repoName}/
 - [Description](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Testing](#Testing)
 - [Questions](#Questions)
 - [Contributing](#contributing)
+- [Testing](#Testing)
+- [License](#License)
 - [Contact](#Contact)
 
 ## Description
@@ -32,13 +33,7 @@ ${markdown.installation}
 ## Usage
 ${markdown.usage}
 
-## License
-${markdown.license}
-
-## Testing
-${markdown.tests}
-
-## Questions 
+## Commonly Asked Questions
 ${markdown.questions}
 
 ## Interested in contributing? Here's how:
@@ -53,6 +48,12 @@ Additional information on creating a pull request can be found [here](https://he
 
 ## Contributors
 ${markdown.contributing}
+
+## Testing
+${markdown.tests}
+
+## License
+${markdown.license}
 
 ## Contact
 For more information, please email me at ${markdown.userEmail}
