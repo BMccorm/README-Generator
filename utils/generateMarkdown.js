@@ -10,7 +10,7 @@ Created by [${markdown.username}](https://github.com/${markdown.username})
 
 https://${markdown.username}.github.io/${markdown.repoName}/
 
-![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
+Project Link: ![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
 ## Table of Contents
 - [Description](#Description)
