@@ -1,14 +1,14 @@
-->![GitHub repo size](https://img.shields.io/github/repo-size/BMcCorm/README-Generator)<-
-->![GitHub stars](https://img.shields.io/github/stars/BMcCorm/README-Generator?style=social)<-
-->![GitHub forks](https://img.shields.io/github/forks/BMcCorm/README-Generator?style=social)<-
+![GitHub repo size](https://img.shields.io/github/repo-size/BMcCorm/README-Generator)
+![GitHub stars](https://img.shields.io/github/stars/BMcCorm/README-Generator?style=social)
+![GitHub forks](https://img.shields.io/github/forks/BMcCorm/README-Generator?style=social)
 
 # README-Generator
 
--> Created by BMcCorm <-
+Created by BMcCorm
 
-->Add link to project<-
+https://BMcCorm.github.io/README-Generator/
 
-->![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)<-
+![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
 ## Description
 
@@ -24,17 +24,29 @@ Once the project is running in terminal, follow the prompts for each question. T
 
 ## License
 
-no license at this time
+No license at this time
 
 ## Testing
 
-no testing at the moment
+No testing at the moment
 
 ## Questions
 
+test
+
 ## Interested in contributing? Here's how:
 
-Reach out to expand on this project
+1. Fork this repository
+2. Create a branch: git checkout -b "Create_A_Branch_Name"
+3. Make and commit your changes: git commit -m "add your message here"
+4. Push to the master branch: git push origin "Branch_Name"
+5. Create the pull request.
+
+More information on creating a pull request can be found [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## Contributors
+
+No contributors at the moment
 
 ## Contact
 
