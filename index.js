@@ -118,13 +118,6 @@ async function init() {
 
   markdown.tests = tests;
 
-  const { questions } = await inquirer.prompt({
-    message: "Questions: answer commonly asked questions here.",
-    name: "questions",
-  });
-
-  markdown.questions = questions;
-
   const icon = repoArr[0].owner.avatar_url;
   markdown.icon = icon;
 

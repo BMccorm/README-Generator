@@ -8,19 +8,16 @@ function generateMarkdown(markdown) {
 # ${markdown.repoName}
 Created by [${markdown.username}](https://github.com/${markdown.username}) 
 
-Project [Link](https://${markdown.username}.github.io/${markdown.repoName}/)
-
 ![Github icon image](https://avatars1.githubusercontent.com/u/64443618?v=4)
 
 ## Table of Contents
 - [Description](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Questions](#Questions)
-- [Contributing](#contributing)
+- [Contributing](#Contributors)
 - [Testing](#Testing)
 - [License](#License)
-- [Contact](#Contact)
+- [Questions](#Questions)
 
 ## Description
 ${markdown.description}
@@ -30,9 +27,6 @@ ${markdown.installation}
 
 ## Usage
 ${markdown.usage}
-
-## Commonly Asked Questions
-${markdown.questions}
 
 ## Interested in contributing? Here's how:
 
@@ -53,8 +47,9 @@ ${markdown.tests}
 ## License
 ${markdown.license}
 
-## Contact
+## Questions
 For more information, please email me at ${markdown.userEmail}
+The link for this project can be found [here.](https://${markdown.username}.github.io/${markdown.repoName}/)
 
 `;
 }
