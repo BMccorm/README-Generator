@@ -55,5 +55,5 @@ No license at this time.
 
 ## Questions
 
-For more information, please email me at BrielleMcCormick@gmail.com
+For more information, please email me at BrielleMcCormick@gmail.com <br><br>
 The link for this project can be found [here.](https://BMcCorm.github.io/README-Generator/)
